@@ -36,6 +36,8 @@ public class CadastroFormulario {
         String actualTitle = driver.getTitle();
         assertEquals(expectedTitle, actualTitle, "O título da página não corresponde ao esperado!");
 
+        FormularioPage formularioPage = new FormularioPage(driver);
+
     }
 
     @And("visualizo o formulário de cadastro disponível")
@@ -56,7 +58,7 @@ public class CadastroFormulario {
                 "Pet Amor",
                 "contato@petamor.com",
                 "01234567",
-                "250"
+                "100"
         );
 
 //       WebElement name = driver.findElement(By.xpath("//input[@placeholder='Nome do ponto de doação']"));
@@ -70,9 +72,6 @@ public class CadastroFormulario {
 //
 //        WebElement cepButton =driver.findElement(By.xpath("//input[@value='Buscar CEP']"));
 //        cepButton.click();
-//
-//        WebElement numero = driver.findElement(By.xpath("//input[@placeholder='Número']"));
-//        numero.sendKeys("102");
 
     }
 

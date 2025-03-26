@@ -21,11 +21,13 @@ public class FormularioPage {
     private By campoNumero = By.xpath("//input[@placeholder='Número']");
 
 
+
     // criado essa class para preencher os campos com seus xpath
     private void preencherCampo(By by, String valor) {
-        WebElement elemento = driver.findElement(by);
+        /*WebElement elemento = driver.findElement(by);
         elemento.clear(); // Limpa o campo antes de preencher (evita concatenação indesejada)
-        elemento.sendKeys(valor);
+        elemento.sendKeys(valor);*/
+
     }
 
     // Método para clicar em um botão
